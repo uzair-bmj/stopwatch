@@ -11,41 +11,46 @@
         crossorigin="anonymous"></script>
     <title>Stop Watch</title>
     <style>
-        body{
-            background-image: radial-gradient(circle,grey,white 500%);
+        body {
+            background-image: radial-gradient(circle, grey, white 500%);
         }
+
         h1 {
             display: inline-block;
         }
-        .text{
+
+        .text {
             color: rgb(15, 15, 88);
-            margin-top: 150px;
+            margin-top: 130px;
         }
-        .box{
+
+        .box {
             border-radius: 10px;
-            background-image: radial-gradient(circle,white,grey 150%);
+            background-image: radial-gradient(circle, white, grey 150%);
             width: 30vw;
             height: 250px;
             padding: 50px;
             margin-top: 30px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        .timer{
+
+        .timer {
             background-color: rgb(93, 93, 227);
             color: white;
-            width: 500px;
+            width: 450px;
             height: 70px;
             align-items: center;
             position: relative;
-            right: 20%;
-            padding: 5px;
+            right: 22.5%;
+            padding: 5px;   
             border-radius: 10px;
         }
-        button{
+
+        button {
             width: 100px;
         }
     </style>
-</head> 
+</head>
 
 
 <body>
@@ -53,7 +58,7 @@
         <div class="text">
             <h1>STOPWATCH</h1>
         </div>
-        
+
         <div class="box">
             <div class="timer">
                 <h1 id="hr">00</h1>
@@ -66,9 +71,11 @@
             </div>
             <br>
             <br>
-            <button onclick="start()" class="btn btn-primary">Start</button>
-            <button onclick="stop()" class="btn btn-outline-primary">Stop</button>
-            <button onclick="reset()" class="btn btn-outline-danger">Reset</button>
+            <div>
+                <button onclick="start()" class="btn btn-primary">Start</button>
+                <button onclick="stop()" class="btn btn-outline-primary">Stop</button>
+                <button onclick="reset()" class="btn btn-outline-danger">Reset</button>
+            </div>
         </div>
 
     </center>
